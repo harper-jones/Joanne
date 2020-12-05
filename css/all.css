@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+body{
+    font-family: 'roboto';
+    font-style: italic;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 94px;
+}
+
+.content-txt{
+    text-align: center;
+}
+.content-txt-light{
+    color: #ffffff;
+}
+.content-block{
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-flex{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* font-size font weight */
+.fz-s-fw-m{
+    font-size: 20px;
+    font-weight: 500;
+}
+.fz-m-fw-m{
+    font-size: 24px;
+    font-weight: 500;
+}
+.fz-m-fw-bd{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.fz-l-fw-m{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+}
+/* font-size font weight */
+
+
+/* line-height */
+.lh-s{
+    line-height: 30px;
+}
+.lh-m{
+    line-height: 36px;
+}
+.lh-l{
+    line-height: 42px;
+}
+/* line-height */
+
+/* mb 8 16 24 32 40 48 56 64 */
+.mb-1{
+    margin-bottom: 8px;
+}
+.mb-2{
+    margin-bottom: 16px;
+}
+.mb-3{
+    margin-bottom: 24px;
+}
+.mb-4{
+    margin-bottom: 32px;
+}
+.mb-5{
+    margin-bottom: 40px;
+}
+.mb-6{
+    margin-bottom: 48px;
+}
+.mb-7{
+    margin-bottom: 56px;
+}
+.mb-8{
+    margin-bottom: 64px;
+}
+.mb-9{
+    margin-bottom: 160px;
+}
+/* mb 8 16 24 32 40 48 56 64 */
+
+/* pt 64 356  */
+.pt-1{
+    padding-top: 64px;
+}
+.pt-2{
+    padding-top: 356px;
+}
+/* pt 64 356  */
+
+/* pb 80 160 268 */
+.pb-1{
+    padding-bottom: 80px;
+}
+.pb-2{
+    padding-bottom: 160px;
+}
+.pb-3{
+    padding-bottom: 268px;
+}
+/* pb 80 160 268 */
+
+/* header */
+header{
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png') no-repeat center center;
+}
+header .header-title{
+    width: 304px;
+}
+.header-title p{
+    text-align: left;
+}
+
+.icon-list{
+    display: flex;
+    width: 288px;
+    justify-content: space-between;
+    margin: 0 auto;
+}   
+/* header */
+
+/* about */
+.about img{
+    width: 384px;
+}
+.about .about-list1 li:nth-child(3){
+    position: relative;
+    display: inline-block;
+    padding-bottom: 24px;
+}
+.about .about-list1 li:nth-child(3)::after{
+    content: "";
+    position: absolute;
+    width: 384px;
+    height: 1px;
+    background: #000000;
+    left: 9px;
+    bottom: 0;
+}
+
+.about .about-list2 li::before{
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background: #891818; 
+    vertical-align: middle;
+    margin-right: 10px;
+}
+/* about */
+
+/* brand */
+.brand{
+    background: #000000;
+}
+.brand li:first-child{
+    width: 792px;
+}
+.brand li:nth-child(2),.brand li:nth-child(3){
+    width: 588px;
+}
+/* brand */
+
+/* footer */
+footer{
+    background: #000000;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/* footer */
